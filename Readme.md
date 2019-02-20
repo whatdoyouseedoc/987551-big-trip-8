@@ -1,7 +1,7 @@
 # Личный проект «Большое путешествие» [![Build status][travis-image]][travis-url]
 
 * Студент: [Александр Ермаков](https://up.htmlacademy.ru/ecmascript/8/user/987551).
-* Наставник: `Павел Скрипкин`.
+* Наставник: [Павел Скрипкин](https://github.com/SPavelhjk).
 
 ---
 
