@@ -32,7 +32,7 @@ flushTripPoints();
 renderTripPoints(tpMocks);
 
 $filters.addEventListener(`click`, () => {
-  const tps = Array(getRandomInt(1, 4)).fill(0).map((item, i) => tpMocks[i]);
+  const tps = Array(getRandomInt(1, 7)).fill(0).map((item, i) => tpMocks[i]);
 
   flushTripPoints();
   renderTripPoints(tps);
