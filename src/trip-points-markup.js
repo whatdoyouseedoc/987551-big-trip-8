@@ -2,13 +2,13 @@
 import tripPointMarkup from './trip-point-markup';
 
 export default (tripPoints) => {
-  let tripPointsMarkup = ``;
-
-  tripPoints.forEach((item) => {
+  const tripPointsMarkup = tripPoints.reduce((acc, item) => {
     const {icon, name, time, duration, price, offers} = item;
 
-    tripPointsMarkup += tripPointMarkup(icon, name, time, duration, price, offers);
-  });
+    acc += tripPointMarkup(icon, name, time, duration, price, offers);
+
+    return acc;
+  }, ``);
 
   return `
     <section class="trip-day">
