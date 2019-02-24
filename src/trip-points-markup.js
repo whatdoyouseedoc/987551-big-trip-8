@@ -7,7 +7,7 @@ export default (tripPoints) => {
   tripPoints.forEach((item) => {
     const {icon, name, time, duration, price, offers} = item;
 
-    return tripPointsMarkup += tripPointMarkup(icon, name, time, duration, price, offers);
+    tripPointsMarkup += tripPointMarkup(icon, name, time, duration, price, offers);
   });
 
   return `

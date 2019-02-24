@@ -3,7 +3,9 @@ import offerMarkup from './offer-markup';
 export default (icon, name, time, duration, price, offers) => {
   let offersMarkup = ``;
 
-  offers.forEach((item) => offersMarkup += offerMarkup(item.name));
+  offers.forEach((item) => {
+    offersMarkup += offerMarkup(item.name);
+  });
 
   return `
     <article class="trip-point">
